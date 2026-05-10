@@ -1,10 +1,10 @@
 # Repository Pattern with Unit of Work — .NET
 
-A **.NET Web API** demonstrating the **Repository Pattern** and **Unit of Work** design pattern using Entity Framework Core — applied to a simple books and authors domain.
+A **.NET Web API** demonstrating the **Repository Pattern** and **Unit of Work** design pattern using Entity Framework Core — applied to a books and authors domain.
 
 ## What it does
 
-This project is a practical reference implementation showing how to abstract data access behind repository interfaces and coordinate multiple repository operations through a single Unit of Work. It's a clean architectural pattern commonly used in production .NET applications.
+A practical reference implementation showing how to abstract data access behind repository interfaces and coordinate multiple repository operations through a single Unit of Work.
 
 ## Tech Stack
 
@@ -29,12 +29,6 @@ This project is a practical reference implementation showing how to abstract dat
 
 ## Getting Started
 
-1. Set your connection string in `appsettings.json`.
-2. Apply migrations:
-   ```bash
-   dotnet ef database update --project RepositoryPatternWithUOW.EF --startup-project RepositoryPatternWithUOW.Api
-   ```
-3. Run the API:
-   ```bash
-   dotnet run --project RepositoryPatternWithUOW.Api
-   ```
+1. Set connection string in `appsettings.json`.
+2. Apply migrations: `dotnet ef database update --project RepositoryPatternWithUOW.EF --startup-project RepositoryPatternWithUOW.Api`
+3. Run: `dotnet run --project RepositoryPatternWithUOW.Api`
